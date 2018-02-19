@@ -1,0 +1,34 @@
+
+version: '3'
+
+
+services:
+    unitime-db:
+        container_name: unitime-db
+
+        build:
+            context: ./docker/mysql/
+
+        environment: 
+            - MYSQL_ROOT_PASSWORD=unitime
+                
+        expose:
+            - 3306
+            
+        volumes:
+            - "./data/db/mysql:/var/lib/mysql"
+
+            
+    unitime-web:
+        depends_on:
+            - unitime-db
+            
+        container_name: unitime-web
+
+        build:
+            context: ./docker/tomcat8/
+
+        ports:
+            - 8888:8080 
+
+
