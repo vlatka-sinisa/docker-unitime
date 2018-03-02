@@ -39,3 +39,4 @@ Thumbs.db
 
 # UniTime files #
 UniTime.war
+backup_*.sql
