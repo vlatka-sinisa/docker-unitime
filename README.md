@@ -16,8 +16,7 @@ docker-compose build && docker-compose up
 In order to get the version 4.2.185 you can use the following line:
 
 ```bash
-wget https://github.com/UniTime/unitime/releases/download/v4.2.185/unitime-4.2_bld185.zip
--o unitime.zip && unzip -j unitime-4.2_bld185.zip web/UniTime.war
+wget https://github.com/UniTime/unitime/releases/download/v4.2.185/unitime-4.2_bld185.zip -o unitime.zip && unzip -j unitime-4.2_bld185.zip web/UniTime.war
 ```
 
 ## Issues
