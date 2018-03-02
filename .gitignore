@@ -40,3 +40,6 @@ Thumbs.db
 # UniTime files #
 UniTime.war
 backup_*.sql
+data/
+docker/tomcat8/cpsolver/
+docker/tomcat8/unitime/
