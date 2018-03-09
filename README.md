@@ -26,5 +26,5 @@ When started for the first time tomcat will be started before the MySql
 finishes the initialization and therefore UniTime will not work. You 
 should simply start it again using docker-compose up
 
-This can be changes by using various workarounds in docker (or switching to
+This can be changed by using various workarounds in docker (or switching to
 another container management :) ).
