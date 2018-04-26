@@ -19,13 +19,15 @@ In order to get the version 4.2.185 you can use the following line:
 wget https://github.com/UniTime/unitime/releases/download/v4.2.185/unitime-4.2_bld185.zip -O unitime.zip && \ 
 unzip -j unitime.zip web/UniTime.war && \
 rm unitime.zip
+
 ```
 
 In order to get the latest version you can use the following line:
 ```bash
-wget `curl -s https://api.github.com/repos/UniTime/unitime/releases/latest | grep browser_download_url | cut -d '"' -f 4` -O UniTime.zip && \ 
+wget `curl -s https://api.github.com/repos/UniTime/unitime/releases/latest | grep browser_download_url | cut -d '"' -f 4` -O UniTime.zip && \
 unzip -j unitime.zip web/UniTime.war && \
 rm unitime.zip
+
 ```
 
 ## Issues
