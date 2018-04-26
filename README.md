@@ -24,7 +24,7 @@ rm unitime.zip
 
 In order to get the latest version you can use the following line:
 ```bash
-wget `curl -s https://api.github.com/repos/UniTime/unitime/releases/latest | grep browser_download_url | cut -d '"' -f 4` -O UniTime.zip && \
+wget `curl -s https://api.github.com/repos/UniTime/unitime/releases/latest | grep browser_download_url | cut -d '"' -f 4` -O unitime.zip && \
 unzip -j unitime.zip web/UniTime.war && \
 rm unitime.zip
 
