@@ -6,7 +6,7 @@ LABEL maintainer="UniTime"
 
 RUN apt-get update && \
 	apt-get install -y wget unzip && \
-	wget  http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar && \
+	wget https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar && \
 	echo 'JAVA_OPTS=”-Djava.awt.headless=true -Xmx2g -XX:+UseConcMarkSweepGC”' >> /etc/default/tomcat8 && \
 	cp mysql-connector-java-5.1.38.jar /usr/local/tomcat/lib && \
 	mkdir /usr/local/tomcat/data && \
